@@ -1,0 +1,13 @@
+footer{
+    /* width: 100%; */
+    background: #eee;
+    text-align: center;
+    color: gray;
+    padding: 5px;
+    position: relative;
+    clear: both;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 50px;
+    overflow: hidden;
+}

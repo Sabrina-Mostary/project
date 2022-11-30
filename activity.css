@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#activity-container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn{
+    flex: 1;
+}
+
+.sub-container1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-container1 .export-form{
+    width: 50%;
+}
+
+.sub-container1 .export-form input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-color: skyblue;
+}
+
+.sub-container1 .export-form input:hover{
+    cursor: pointer;
+}
+
+
+
+.sub-container1 .select-container{
+    width: 50%;
+    /* display: flex; */
+}
+
+
+.sort-form li{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sort-form li label{
+    align-self: center;
+    flex: 1;
+    flex-shrink: 1;
+}
+
+.sort-form li select{
+    align-self: flex-end;
+    margin: 10px;
+    padding: 10px;
+    flex: 2;
+    flex-shrink: 1;
+}
+
+.sort-form li input{
+    align-self: center;
+    flex: 1;
+    margin-bottom: 0px;
+    flex-shrink: 1;
+}
+
+.sort-form li input:hover{
+    cursor: pointer;
+}
+
+.sub-container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.sub-container2 .link-container{
+    width: 50%; 
+    display: flex;
+    flex-shrink: 1;
+}
+
+.sub-container2 .link-container label{
+    align-self: center;
+    flex: 1;
+    flex-shrink: 1;
+}
+
+.sub-container2 .link-container input{
+    margin-right: 10;
+    align-self: flex-end;
+    flex: 2;
+    flex-shrink: 1;
+}
+
+.sub-container2 .btn-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+
+.sub-container2 .btn-container input[type='submit']:hover{
+    cursor: pointer;
+}
+
+.sub-container2 .btn-container input[type='button']:hover{
+    cursor: pointer;
+}
+
+#main-content .sort{
+    display: flex;
+}
+
+#main-content {
+    padding: 25px;
+    min-height: 400px;
+}
+
+#main-content h2 {
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+#main-content table {
+    width: 100%;
+    background-color:silver;
+    margin: 0 0 20px;
+}
+
+#main-content table th {
+    padding: 10px;
+    color: #fff;
+    background-color: gray;
+    text-transform: uppercase;
+}
+
+#main-content table th:last-child {
+    width: 130px;
+}
+
+#main-content table td {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.activity{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-shrink: 1;
+    padding: 5px;
+}
+.myForm{
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-around;
+}
+.activity .myForm .btn{
+    padding: 2px;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    color: #fff;
+    background-color: skyblue;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+}
+.activity .myForm .btn:hover{
+    cursor: pointer;
+}
+.activity .myForm .btn3{
+    background-color: #e74c3c;
+}
+
+.pagination {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .pagination a.active {
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+
+@media screen and (max-width:280px){
+    .link-container{
+        flex-direction: column;
+    }
+    
+    .sub-container2 .link-container input{
+        align-self: center;
+    }
+
+    .sort-form li input{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .sort-form li select{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:360px){
+    .link-container{
+        flex-direction: column;
+    }
+    
+    .sub-container2 .link-container input{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:500px){
+    .link-container{
+        flex-direction: column;
+    }
+    
+    .sub-container2 .link-container input{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .sub-container2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-container1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-container1 .export-form input{
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    .sort-form li input{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

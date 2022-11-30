@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 5px;
+    color: gray;
+    box-shadow: 2px 0 15px 15px #eee;    
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    padding: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover{
+    color: skyblue;
+}
+
+.menu a.active{
+    color: skyblue;
+}
+
+header .logo {
+    margin: 0 auto;
+    text-align: center;    
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid silver;
+}
+
+
+
+
+
+input[required]{
+    background-image: radial-gradient(#F00 16%, transparent 16%), radial-gradient(#F00 15%, transparent 16%);
+    background-size: 1em 1em;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+header input {
+    width: 70px;
+    height: 30px;
+}
+
+header .settting-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+header .settting-bar input{
+    margin: 0 10px;
+}
+
+header .settting-bar input[type="button"]{
+    transition: color 0.2s ease-in-out;
+    /* transition: background-color 0.2s ease-in-out; */
+    transition: border 0.2s ease-in-out;
+}
+
+header .settting-bar input[type="button"]:hover{
+    border: 2px solid gray;
+    background-color: white;
+    color: skyblue;
+}
+
+.container {
+    margin: 50px 0 auto;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+}
+
+select{
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+}
+
+select:focus{
+    outline: none;
+    border: 2px solid gray;
+}
+
+.form-container {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    max-width: 800px;
+    border: 2px solid silver;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container .name2 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.form-container .wrapper{
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.form-container .wrapper li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.form-container .file .wrapper .lst-container {
+    /* border: 2px solid skyblue; */
+    color: gray;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.form-container .file .wrapper .lst-container img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form-container .backlog .backlog-container{
+    color: gray;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.form-container .backlog .backlog-container .backlog-inner-container{
+   border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+
+.form-container .backlog .backlog-container .backlog-inner-container2 {
+    border-radius: 10px;
+     margin: 1px;
+     padding: 1px;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+ }
+
+.form-container .name select{
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin-left: 10px;
+ }
+
+.form-container input[type="submit"]{
+    background: skyblue;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 300px){
+    
+    .form-container .file .wrapper .lst-container input{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .backlog .backlog-container .backlog-inner-container{
+        flex-direction: column;
+    }
+    .backlog .backlog-container .backlog-inner-container input{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .backlog .backlog-container .backlog-inner-container select{
+        width: 100%;
+        margin: auto;
+    }
+    .form-container .file .wrapper .lst-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    header .logo{
+        padding: 10px;
+        order: 0;
+    }
+    header .menu{
+        margin: 10px auto;
+        order: 1;
+    }
+    header .settting-bar{
+        margin: 10px auto;
+        order: 2;
+    }
+
+    .container .form-container .name{
+        flex-direction: column;
+    }
+
+    .backlog .backlog-container .backlog-inner-container select{
+        margin-top: 3px;
+    }
+    
+.form-container .backlog .backlog-container .backlog-inner-container2{
+        justify-content: space-between;
+}
+    .form-container .file .wrapper .lst-container{
+        flex-direction: column;
+         align-items: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header .logo{
+        order: 0;
+        padding: 10px;
+    }
+    header .menu{
+        order: 1;
+        margin: 10px auto;
+    }
+    header .settting-bar{
+        order: 2;
+        margin: 10px auto;
+    }
+    .container .form-container .name{
+        flex-direction: column;
+    }
+    .backlog .backlog-container .backlog-inner-container select{
+        margin-top: 5px;
+    }
+    .form-container .backlog .backlog-container .backlog-inner-container2{
+        justify-content: space-between;
+}
+    .form-container .file .wrapper .lst-container{
+        flex-direction: column;
+         align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 649px) {
+    header{
+        flex-direction: column;
+    }
+    header .logo{
+        order: 0;
+        padding: 10px;
+    }
+    header .menu{
+        order: 1;
+        margin: 10px 0;
+    }
+    header .settting-bar{
+        order: 2;
+        margin: 10px auto;
+    }
+    .container .form-container .name{
+        flex-direction: column;
+    }
+
+    .form-container .file .wrapper .lst-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .backlog .backlog-container .backlog-inner-container select{
+        margin-top: 7px;
+    }
+    .form-container .backlog .backlog-container .backlog-inner-container2{
+        justify-content: space-between;
+}
+
+}

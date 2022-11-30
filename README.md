@@ -1,12 +1,13 @@
 Project Name - Student Registration Form
 
-Matric ID - C201224
-
-Name -Sabrina Mostary
 
 Course Code - CSE-3532
 
-Course Name - Tools and Technologies for Internet Programming
+Course Name - Tools and Technologies for Internet Programming.
+
+Matric ID - C201224
+
+Name -Sabrina Mostary
 
 Semester - 5th
 
